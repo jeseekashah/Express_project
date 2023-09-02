@@ -1,0 +1,29 @@
+{
+  "name": "takehome",
+  "scripts": {
+    "start": "node scripts/run.mjs",
+    "seed": "ts-node --transpileOnly scripts/seed.ts",
+    "seed-prod": "ts-node --transpileOnly scripts/seed.ts --full",
+    "bundle": "node scripts/bundle.mjs",
+    "prepare-submission": "node scripts/bundle.mjs"
+  },
+  "workspaces": [
+    "packages/front-end",
+    "packages/back-end"
+  ],
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.5.0",
+    "choco": "^0.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "git": "^0.1.5"
+  }
+}
